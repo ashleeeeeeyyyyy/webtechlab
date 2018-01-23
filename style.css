@@ -1,4 +1,4 @@
-.Home{
+.Home {
 	display: grid;
 	width: 100%;
 	height: 85%;
@@ -10,48 +10,52 @@
 	overflow: hidden;
 	position: relative;
 }
-.Home img{
+
+.Home img {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	opacity: 0.5;
 }
 
-.Home > div{
+.Home > div {
 	margin: 10px;
 	z-index: 1;
 }
 
-.Home .navigator{
+.Home .navigator {
 	grid-column: 3/3;
 	grid-row: 1/1;
 }
 
-.navigator ul{
+.navigator ul {
 	margin: 0px;
 	padding: 0px;
 	list-style: none;
 	position: absolute;
 	width: 100%;
 }
-.navigator ul li{
+
+.navigator ul li {
 	font-family: arial;
 	font-size: 30px;
 	float: left;
 	width: 10%;
 }
-.navigator ul li a{
+
+.navigator ul li a {
 	text-decoration: none;
 	color: white;
 	display: block;
 }
+
 .navigator ul li a:hover {
 	color: #fff;
 	opacity: 0.5;
 	transition: 0.3s;
 }
 
-.Home .title{
+.Home .title {
 	grid-column: 1/2;
 	grid-row: 1/2;
 }
@@ -66,7 +70,7 @@
 	font-size: 40px;
 }
 
-.header{
+.header {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	height: 50px;
@@ -74,28 +78,28 @@
 	background: black;
 }
 
-.header > div{
+.header > div {
 	margin: 10px;
 }
 
-.header .navigator{
+.header .navigator {
 	grid-column: 3/3;
 	grid-row: 1/1;
 }
 
-.header .title{
+.header .title {
 	grid-column: 1/2;
 	grid-row: 1/2;
 }
 
-.headline{
+.headline {
 	background: blue;
 	font-size: 60px;
 	text-align: center;
 	height: 300px;
 }
 
-.Content{
+.Content {
 	display: grid;
 	width: 100%;
 	height: 400px;
@@ -103,7 +107,8 @@
 	grid-template-columns: 1fr 1fr 1fr;
 	text-align: center;
 }
-.content > div{
+
+.content > div {
 	margin: 10px;
 	background: white;
 }
