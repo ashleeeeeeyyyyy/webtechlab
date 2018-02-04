@@ -1,98 +1,185 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
 }
 
-/* SLIDESHOW */
-@keyframes slideshow{
+html, body {
+    background-color: #f1f1f1;
+    height: 100%;
+    margin: 0;
+}
+
+/** NAVIGATION BAR **/
+nav {
+    position: fixed;
+    width: 100%;
+    background: #f1f1f1;
+    height: 40px;
+    border-bottom: 3px solid #ccc;
+    z-index: 1;
+}
+
+nav ul {
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    width: 100%;
+    position: absolute;
+}
+
+nav ul li {
+    text-align: center;
+    display: inline-block;
+    font-size: 35px;
+    width: 150px;
+    padding-right: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 200px;
+}
+
+nav ul li a:hover {
+    background-color: darkgrey;
+    transition: 0.5s;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.logo{
+    font-size: 18px;
+    font-family: cursive;
+    margin-right: 50%;
+}
+
+/** BACKGROUND **/
+.background {
+    widows: 100%;
+    height: 100%;
+
+    position: absolute;
+}
+
+.background img {
+    width: 100%;
+    height: 90%;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.background h1 {
+    color: white;
+    top: 30%;
+    left: 20%;
+    z-index: 2;
+    position: absolute;
+    font-size: 50px;
+    font-family: inherit;
+}
+
+p {
+    font-family: arial;
+    font-size: 15px;
+}
+
+/** SLIDESHOW **/
+@keyframes slider{
     0% {left: 0;}
     20%{left: 0;}
-    25%{left: -100%;}
-    45%{left: -100%;}
-    50%{left: -200%;}
-    70%{left: -200%;}
+    25%{left: -150%;}
+    45%{left: -150%;}
+    50%{left: -250%;}
+    70%{left: -250%;}
     75%{left: -300%;}
     95%{left: -300%;}
     100%{left: -400%;}
 }
 
-#slideshow {
-    overflow: ;
+#image_slider {
+    overflow: hidden;
 }
 
-#slideshow figure img {
-    width: auto;
+#image_slider figure img {
     float: left;
+    width: 25%;
+    height: 350px;
+
 }
 
-#slideshow figure {
-    position: relative;
-    width: 500%;
-    margin: 0;
+#image_slider figure {
     left: 0;
-    text-align: left;
-    font-size: 0;
-    animation: 20s slideshow infinite;
+    width: 500%;
+    margin: 0 auto;
+    position: relative;
+    animation: 15s slider infinite;
 }
 
-/* NAVIGATION BAR */
-nav{
-    position: fixed;
+/** CONTENT **/
+#content {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 100%;
+}
+
+#content > div {
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+}
+
+/** CONTAINER **/
+#main {
+    padding-top: 50px;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+#container h2{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#container > div{
+    padding: 5px;
+    height: 500px;
+    margin: 10%;
+    background-color: white;
+    border: 3px solid white;
+}
+
+#container img{
     width: 100%;
-    background: white;
-    height: 40px;
-    border-bottom: 2px solid #aaaaaa;
-    z-index: 1;
-    
+    height: 70%;
 }
-nav ul{
-    list-style: none;
-    margin: 0 auto;
-    padding: 0 auto;
-    position: absolute;
-}
-nav ul li{
-    display: inline-block;
-    width: 80px;
-    margin: 8px 20px;
-    font-size: 30px;
-}
-nav ul li a{
-    text-decoration: none;
-    color: black;
-}
-nav ul li a:hover{
-    background-color: whitesmoke;
-    transition: 0.3s;
-}
-.background{
-    widows: 100%;
-    height: 100%;
-    opacity: 0.9;
-    position: absolute;
-    
-}
-.background img{
+
+#container .box img{
     width: 100%;
     height: 90%;
-    z-index: 1;
-}
-.background h1{
-    top: 45%;
-    left: 45%;
-    z-index: 2;
-    position: absolute;
-    
 }
 
-/* FOOTER */
-.footer{
+.TextDescription{
+    padding: 15px;
+}
+
+/** FOOTER **/
+footer {
     bottom: 0;
-    position: fixed;
     width: 100%;
-    height: 10%;
-    background: white;
-    text-align: center;
+    height: 5%;
+    background-color: #f1f1f1;
+    position: absolute;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 80%;
 }
-
