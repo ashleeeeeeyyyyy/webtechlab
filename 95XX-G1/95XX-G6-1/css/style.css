@@ -4,7 +4,7 @@
     
 }
 
-html, body {
+body {
     background-color: #f1f1f1;
     height: 100%;
     margin: 0;
@@ -15,18 +15,14 @@ nav {
     position: fixed;
     width: 100%;
     background: #f1f1f1;
-    height: 40px;
+    height: 120px;
     border-bottom: 3px solid #ccc;
-    z-index: 1;
+    z-index: 2;
 }
 
 nav ul {
-    text-align: left;
-    margin: 0px;
-    padding: 0px;
     list-style: none;
     width: 100%;
-    position: absolute;
 }
 
 nav ul li {
@@ -47,22 +43,22 @@ nav ul li a {
 nav ul li a:hover {
     background-color: darkgrey;
     transition: 0.5s;
-    margin-left: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
-.logo{
-    font-size: 18px;
+
+nav #logo{
+    top: 0;
+    left: 0;
+	text-align: center;
+	padding-top: 10px;
+    font-size: 50px;
     font-family: cursive;
-    margin-right: 50%;
 }
 
 /** BACKGROUND **/
 .background {
     widows: 100%;
     height: 100%;
-
     position: absolute;
 }
 
@@ -71,16 +67,6 @@ nav ul li a:hover {
     height: 90%;
     opacity: 0.9;
     z-index: 1;
-}
-
-.background h1 {
-    color: white;
-    top: 30%;
-    left: 20%;
-    z-index: 2;
-    position: absolute;
-    font-size: 50px;
-    font-family: inherit;
 }
 
 p {
@@ -103,6 +89,7 @@ p {
 
 #image_slider {
     overflow: hidden;
+    margin-bottom: 30px;
 }
 
 #image_slider figure img {
@@ -121,21 +108,31 @@ p {
 }
 
 /** CONTENT **/
-#content {
-    display: grid;
-    grid-template-columns: 1fr;
-    min-height: 100%;
+#main {
+    padding-top: 140px;
 }
 
-#content > div {
-    margin: 20px;
-    padding: 10px;
-    background-color: white;
+#main .title{
+    width: 95%;
+	margin: 0 auto;
+	padding: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	box-shadow: 2px 2px;
+	background-color: white;
 }
+#main .content{
+	width: 95%;
+	margin: 5px auto 25px auto;
+	padding: 10px;
+	box-shadow: 2px 2px;
+	background-color: white;
+}
+
 
 /** CONTAINER **/
 #main {
-    padding-top: 50px;
+    padding-top: 140px;
 }
 
 #container{
@@ -150,26 +147,31 @@ p {
 }
 
 #container > div{
-    padding: 5px;
+    padding: 10px;
     height: 500px;
-    margin: 10%;
+    margin: 5%;
     background-color: white;
     border: 3px solid white;
 }
 
 #container img{
     width: 100%;
-    height: 70%;
+    height: 97%;
 }
 
 #container .box img{
     width: 100%;
-    height: 90%;
+    height: 60%;
+}
+#container .box1 img{
+    width: 100%;
+    height: 87%;
 }
 
 .TextDescription{
     padding: 15px;
 }
+
 
 /** FOOTER **/
 footer {
